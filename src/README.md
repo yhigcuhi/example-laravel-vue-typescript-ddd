@@ -17,9 +17,22 @@ npm install
 
 vue (vite環境)
 ```bash
-npm install vue @vitejs/plugin-vue lodash --save-dev
+npm install vue @vitejs/plugin-vue lodash bootstrap typescript @types/lodash --save-dev
 ```
+* vite.config.tsへ (vite.config.js => .tsにして内容変えた ) 
+- plugin vue 導入
+- server 追加 導入
+- laravel inputを app.js => app.tsへ
 
+* tsconfig json作成 (vue stroybookで作成したやつ参考に)
+- tsconfig.jsonの内容作成
+- tsconfig.node.json
+
+* app.js, bootstrap.js => tsへ
+* @typesに vue vite-env.d.ts追加
+* app.blade.php作成
+- route/web.php / を app.blade.phpへ
+- app.blade.phpに @vite(app.tsとか)と マウント先記載
 
 ## About Laravel
 
