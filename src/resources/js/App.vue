@@ -1,3 +1,7 @@
+<script setup lang="ts">
+/* import 部品 */
+import Players from '@/components/pages/Players.vue';
+</script>
 <template>
-    <div>TEST</div>
+    <Players />
 </template>

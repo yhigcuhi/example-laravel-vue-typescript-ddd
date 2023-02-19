@@ -28,6 +28,12 @@ export default defineConfig({
             },
         }),
     ],
+    // 謎エラー対策
+    resolve: {
+        alias: {
+            vue: 'vue/dist/vue.esm-bundler.js',
+        },
+    },
     // localhost:{WEB port}で起動しているdocker で laravel viteの5173ポートへフォワードするため
     server: {
         host: true

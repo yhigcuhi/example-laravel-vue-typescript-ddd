@@ -13,6 +13,9 @@
         @vite(['resources/css/app.css', 'resources/js/app.ts'])
     </head>
     <body class="font-sans antialiased">
-        <div id="app"></div>
+        <div>TEST</div>
+        <div id="app">
+            <main-app/>
+        </div>
     </body>
 </html>
