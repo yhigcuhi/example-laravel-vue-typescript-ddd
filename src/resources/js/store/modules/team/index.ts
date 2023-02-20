@@ -21,6 +21,9 @@ const state: State = {
 
 // 値取得 関数 (componentsで使えるところ)
 const getters: GetterTree<State, RootState> = {
+    // TODO: gettersの各Getter<State>は Stateの取得というより算出関数(computed)として扱う意味合いが正しいのかと...
+    // チーム数
+    teamCount: (state: State): () => number => () => state.all.length, // TODO: 使わないが、上記の例
     // チーム一覧
     teams: (state) => () => state.all,
 };

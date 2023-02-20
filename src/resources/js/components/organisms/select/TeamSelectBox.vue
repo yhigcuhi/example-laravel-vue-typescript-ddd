@@ -13,8 +13,9 @@ const store = useStore();
 
 // 選択値
 const options = computed(() => {
-    // チーム一覧取得
-    const teams = store.getters['team/teams']();
+    // チーム一覧取得 TODO:素のvuex.getters anyになる は意味合いとしては computedで使う感じ
+    // const teams = store.getters['team/teams']();
+    const teams = store.state.team.all; // 素のvuex.gettersではなく stateアクセスでデータ取ってくる
     // 選択オプションの形へ
     return map(teams, ({team_cd, name}) => ({value: team_cd.value(), text: name.value()}));
 });
