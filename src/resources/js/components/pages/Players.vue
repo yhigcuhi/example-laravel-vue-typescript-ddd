@@ -15,7 +15,7 @@ const team_cd = ref(null);
         <!-- タイトル -->
         <h1 class="h3 mb-2 text-dark">Mリーガー</h1>
         <!-- 選択ボックス -->
-        <div class="card shadow mb-4">
+        <div class="card shadow my-4">
             <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">チーム選択</h6>
             </div>

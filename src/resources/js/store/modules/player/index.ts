@@ -56,7 +56,7 @@ const mutations: MutationTree<State> = {
 
 
 // export module
-const module: Module<typeof state, RootState> = {
+const module: Module<State, RootState> = {
     namespaced: true, // 名前空間利用
     // vuex moduleの内容たち
     state,
